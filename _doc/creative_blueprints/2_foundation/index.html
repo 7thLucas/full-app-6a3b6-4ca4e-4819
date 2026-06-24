@@ -1,43 +1,49 @@
 <section class="w-full h-full overflow-auto bg-white">
   <style>
-    .mode-landscape .sl-grid { display: grid; grid-template-columns: 1fr 1fr 0.8fr; gap: 1.75rem; align-items: stretch; }
-    .mode-portrait .sl-grid { display: flex; flex-direction: column; gap: 1.5rem; }
-    .mode-portrait .sl-visual { min-height: 200px; }
+    .mode-landscape .sl-split { display: grid; grid-template-columns: 0.82fr 1.18fr; gap: 1.75rem; align-items: stretch; }
+    .mode-portrait .sl-split { display: flex; flex-direction: column; gap: 1.25rem; }
+    .mode-landscape .sl-pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .mode-portrait .sl-pillars { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
   </style>
   <div class="w-full h-full p-12 flex flex-col">
-    <div class="mb-8">
-      <span class="text-xs font-semibold tracking-widest text-blue-600 uppercase">The Foundation</span>
-      <h2 class="mt-2 text-slate-900 font-bold tracking-tight" style="font-size: clamp(1.9rem, 3.6vw, 2.8rem);">HR teams store everything and run on heroics.</h2>
+    <div class="flex items-center justify-between mb-7">
+      <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-sm">M</div><span class="text-slate-900 font-semibold tracking-tight">Mino Autopilot</span></div>
+      <span class="text-xs font-semibold tracking-widest text-slate-400 uppercase">02 / 09 · The foundation</span>
     </div>
 
-    <div class="sl-grid flex-1">
-      <div class="rounded-2xl border border-red-100 bg-red-50/40 p-7 flex flex-col">
-        <div class="w-10 h-10 rounded-xl bg-red-100 text-red-600 flex items-center justify-center font-bold mb-4">!</div>
-        <h3 class="text-slate-900 font-semibold text-xl mb-3">The Problem</h3>
-        <p class="text-slate-600 leading-relaxed">
-          Omni HR — like every HRIS — is a system of <span class="font-semibold text-slate-800">record</span>. It stores the data, but a human still has to notice the payroll anomaly, chase the missing statutory doc, unblock the new hire, and catch the attrition cluster.
-        </p>
-        <p class="mt-4 text-slate-600 leading-relaxed">
-          Across five jurisdictions, that work is endless, error-prone, and invisible until something breaks.
-        </p>
+    <h2 class="text-slate-900 font-bold tracking-tight mb-7" style="font-size: clamp(1.9rem, 3.6vw, 2.7rem); letter-spacing: -0.02em; text-wrap: balance;">HR teams store everything — and run the rest on heroics.</h2>
+
+    <div class="sl-split flex-1">
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-7 flex flex-col">
+        <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">Today · system of record</span>
+        <p class="mt-3 text-slate-600 leading-relaxed">Omni HR — like every HRIS — stores the data. But a human still has to <span class="font-semibold text-slate-800">notice</span> the payroll anomaly, chase the missing statutory doc, unblock the new hire, and catch the attrition cluster.</p>
+        <p class="mt-auto pt-5 text-slate-500 text-sm leading-relaxed">Across five jurisdictions, that work is endless, error-prone, and invisible until something breaks.</p>
       </div>
 
-      <div class="rounded-2xl border border-blue-100 bg-blue-50/50 p-7 flex flex-col">
-        <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold mb-4">→</div>
-        <h3 class="text-slate-900 font-semibold text-xl mb-3">The Solution</h3>
-        <p class="text-slate-600 leading-relaxed">
-          Mino Autopilot is the <span class="font-semibold text-blue-700">action layer</span> on top of Omni. A coordinated team of HR agents detects issues, recommends actions, routes approvals, and executes workflows — across payroll, onboarding, compliance, retention, and performance.
-        </p>
-        <p class="mt-4 text-slate-600 leading-relaxed">
-          Nothing sensitive ships without human approval. Every step is auditable. That's the trust moat.
-        </p>
-      </div>
-
-      <div class="sl-visual rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
-        <img src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=calm%20premium%20illustration%20of%20coordinated%20AI%20agents%20working%20on%20HR%20operations%2C%20soft%20blue%20and%20slate%2C%20clean%20enterprise%2C%20approval%20checkmarks%2C%20minimal%2C%20white%20background" alt="Coordinated HR agents" class="w-full h-full object-cover" />
+      <div class="rounded-2xl bg-slate-900 p-7 flex flex-col text-white">
+        <span class="text-xs font-semibold uppercase tracking-wide text-blue-300">With Mino · system of action</span>
+        <p class="mt-3 text-slate-100 text-lg leading-relaxed">A coordinated team of HR agents <span class="font-semibold text-white">detects, recommends, routes approvals, and executes</span> — across payroll, onboarding, compliance, retention, and performance.</p>
+        <p class="mt-4 text-slate-300 leading-relaxed">Nothing sensitive ships without human approval. Every step is auditable.</p>
+        <div class="mt-auto pt-6 flex items-center gap-2.5">
+          <span class="px-3 py-1.5 rounded-full bg-blue-600 text-white text-sm font-semibold">Detect → Approve → Execute</span>
+          <span class="px-3 py-1.5 rounded-full bg-white/10 text-blue-50 text-sm font-medium">Audited end to end</span>
+        </div>
       </div>
     </div>
 
-    <p class="mt-7 text-slate-500 text-sm font-medium">Omni doesn't just store HR data anymore — it runs HR operations safely with AI.</p>
+    <div class="sl-pillars mt-6">
+      <div class="rounded-xl border border-slate-200 p-5">
+        <p class="text-slate-900 font-semibold">The category</p>
+        <p class="mt-1.5 text-slate-500 text-sm leading-snug">An agentic HR operations layer — distinct from the HRIS system of record beneath it.</p>
+      </div>
+      <div class="rounded-xl border border-slate-200 p-5">
+        <p class="text-slate-900 font-semibold">The wedge</p>
+        <p class="mt-1.5 text-slate-500 text-sm leading-snug">Omni already owns the HR data. The defensible move is the action layer — safe, approved execution.</p>
+      </div>
+      <div class="rounded-xl border border-blue-200 bg-blue-50 p-5">
+        <p class="text-blue-900 font-semibold">The trust moat</p>
+        <p class="mt-1.5 text-blue-800 text-sm leading-snug">Every sensitive action passes a human gate and lands in a transparent log. Safety is the product.</p>
+      </div>
+    </div>
   </div>
 </section>

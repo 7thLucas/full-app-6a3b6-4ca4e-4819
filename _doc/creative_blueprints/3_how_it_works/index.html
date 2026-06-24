@@ -1,0 +1,65 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <style>
+    .mode-landscape .sl-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .mode-portrait .sl-flow { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .mode-landscape .sl-gate { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.5rem; align-items: center; }
+    .mode-portrait .sl-gate { display: flex; flex-direction: column; gap: 1.25rem; }
+  </style>
+  <div class="w-full h-full p-12 flex flex-col">
+    <div class="flex items-center justify-between mb-7">
+      <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-sm">M</div><span class="text-slate-900 font-semibold tracking-tight">Mino Autopilot</span></div>
+      <span class="text-xs font-semibold tracking-widest text-slate-400 uppercase">03 / 09 · How it works</span>
+    </div>
+
+    <h2 class="text-slate-900 font-bold tracking-tight mb-7" style="font-size: clamp(1.9rem, 3.6vw, 2.7rem); letter-spacing: -0.02em; text-wrap: balance;">A coordinated team of agents — and a human at every gate.</h2>
+
+    <div class="sl-flow mb-8">
+      <div class="rounded-2xl border border-slate-200 p-5">
+        <span class="text-slate-300 font-bold text-2xl leading-none">01</span>
+        <h3 class="mt-2 text-slate-900 font-semibold">Detect</h3>
+        <p class="mt-1.5 text-slate-500 text-sm leading-snug">Agents read HR data and surface anomalies, blockers, and risks.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 p-5">
+        <span class="text-slate-300 font-bold text-2xl leading-none">02</span>
+        <h3 class="mt-2 text-slate-900 font-semibold">Recommend</h3>
+        <p class="mt-1.5 text-slate-500 text-sm leading-snug">Each issue gets an explanation, impact, suggested action, and confidence score.</p>
+      </div>
+      <div class="rounded-2xl border-2 border-blue-300 bg-blue-50 p-5 relative">
+        <span class="absolute -top-2.5 left-5 px-2 py-0.5 rounded-full bg-blue-600 text-white font-bold uppercase tracking-wider" style="font-size: 0.6rem;">Human gate</span>
+        <span class="text-blue-300 font-bold text-2xl leading-none">03</span>
+        <h3 class="mt-2 text-slate-900 font-semibold">Approve</h3>
+        <p class="mt-1.5 text-blue-800 text-sm leading-snug">A person reviews the reasoning and data, then approves, rejects, or requests changes.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 p-5">
+        <span class="text-slate-300 font-bold text-2xl leading-none">04</span>
+        <h3 class="mt-2 text-slate-900 font-semibold">Execute &amp; audit</h3>
+        <p class="mt-1.5 text-slate-500 text-sm leading-snug">Mino runs only what's approved and logs every step to the audit trail.</p>
+      </div>
+    </div>
+
+    <div class="sl-gate rounded-2xl border border-slate-200 bg-slate-50 p-7 flex-1">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wide text-slate-400 mb-3">What a human sees at the gate</p>
+        <p class="text-slate-900 font-semibold text-lg leading-snug">"Issue back-pay correction for 3 Indonesia Ops employees — IDR 14.2M, this cycle."</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-medium">Reasoning summary</span>
+          <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-medium">Data used</span>
+          <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-xs font-semibold">Risk: medium</span>
+          <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-medium">Approver: Sarah</span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2.5">
+        <span class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-semibold">Approve</span>
+        <div class="flex gap-2.5">
+          <span class="flex-1 text-center px-4 py-2.5 rounded-lg border border-slate-300 text-slate-700 text-sm font-semibold">Request changes</span>
+          <span class="flex-1 text-center px-4 py-2.5 rounded-lg border border-slate-300 text-slate-700 text-sm font-semibold">Reject</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 flex items-center gap-3 rounded-2xl bg-slate-900 p-5">
+      <span class="text-blue-300 font-bold">🔒</span>
+      <p class="text-slate-100 text-sm font-medium">Mino never executes a sensitive HR action without human approval. Safety is the product — not a setting.</p>
+    </div>
+  </div>
+</section>

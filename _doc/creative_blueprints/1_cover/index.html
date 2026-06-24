@@ -1,44 +1,54 @@
 <section class="w-full h-full overflow-auto bg-white">
   <style>
-    .mode-landscape .sl-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; }
+    .mode-landscape .sl-grid { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 3.5rem; align-items: center; }
     .mode-portrait .sl-grid { display: flex; flex-direction: column; gap: 2rem; }
     .mode-portrait .sl-visual { order: -1; }
   </style>
   <div class="w-full h-full p-12 flex flex-col justify-between">
-    <div class="flex items-center gap-2.5">
-      <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-lg">M</div>
-      <span class="text-slate-900 font-semibold tracking-tight text-lg">Mino Autopilot</span>
-      <span class="ml-2 text-xs font-medium text-slate-400 uppercase tracking-widest">for Omni HR</span>
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-lg">M</div>
+        <span class="text-slate-900 font-semibold tracking-tight text-lg">Mino Autopilot</span>
+        <span class="ml-2 text-xs font-medium text-slate-400 uppercase tracking-widest">for Omni HR</span>
+      </div>
+      <span class="hidden sm:inline-flex items-center gap-2 text-xs font-medium text-slate-400">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Investor preview · 340 employees · 5 markets
+      </span>
     </div>
 
     <div class="sl-grid">
       <div class="flex flex-col">
         <span class="inline-flex items-center self-start px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold tracking-wide mb-6">AGENTIC HR OPERATIONS LAYER</span>
-        <h1 class="text-slate-900 font-bold tracking-tight leading-[1.05]" style="font-size: clamp(2.4rem, 5.2vw, 4.2rem);">
-          From a system of <span class="text-slate-400">record</span><br/>
+        <h1 class="text-slate-900 font-bold tracking-tight leading-none" style="font-size: clamp(2.5rem, 5.4vw, 4rem); letter-spacing: -0.03em;">
+          From a system of <span class="text-slate-300">record</span><br/>
           to a system of <span class="text-blue-600">action</span>.
         </h1>
-        <p class="mt-6 text-slate-600 text-lg leading-relaxed max-w-xl">
-          Mino Autopilot watches your HR data, surfaces what to act on today, and safely executes the work — every sensitive action gated by human approval.
+        <p class="mt-7 text-slate-600 text-lg leading-relaxed max-w-xl" style="text-wrap: pretty;">
+          Mino watches your HR data, surfaces exactly what to act on today, and safely executes the work — every sensitive action gated by a human, every step in the audit log.
         </p>
-        <div class="mt-10">
+        <div class="mt-9 flex items-center gap-4">
+          <span class="inline-flex items-center px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-semibold">Open Today's actions</span>
+          <span class="text-sm font-medium text-slate-500">7 actions waiting</span>
+        </div>
+        <div class="mt-9">
           <data-attribution />
         </div>
       </div>
 
       <div class="sl-visual">
-        <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50">
-          <img src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=premium%20minimal%20enterprise%20SaaS%20HR%20command%20center%20dashboard%2C%20clean%20white%20interface%2C%20soft%20blue%20accents%2C%20calm%20neutral%2C%20Linear%20Notion%20Vercel%20aesthetic%2C%20rounded%20cards%2C%20whitespace" alt="Mino Autopilot command center" class="w-full h-full object-cover" />
+        <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-slate-50">
+          <img src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=premium%20minimal%20enterprise%20SaaS%20HR%20command%20center%20dashboard%2C%20clean%20white%20interface%2C%20soft%20blue%20accents%2C%20calm%20neutral%2C%20Linear%20Notion%20Vercel%20aesthetic%2C%20rounded%20cards%2C%20whitespace" alt="Mino Autopilot command center — a calm white dashboard surfacing today's prioritized HR actions" class="w-full h-full object-cover" />
         </div>
       </div>
     </div>
 
-    <div class="flex items-center gap-6 text-sm text-slate-400 font-medium">
+    <div class="flex items-center gap-5 text-sm text-slate-400 font-medium">
       <span>Payroll</span><span class="text-slate-200">·</span>
       <span>Onboarding</span><span class="text-slate-200">·</span>
       <span>Compliance</span><span class="text-slate-200">·</span>
       <span>Retention</span><span class="text-slate-200">·</span>
       <span>Performance</span>
+      <span class="ml-auto text-slate-300 tracking-widest text-xs uppercase">01 / 09</span>
     </div>
   </div>
 </section>

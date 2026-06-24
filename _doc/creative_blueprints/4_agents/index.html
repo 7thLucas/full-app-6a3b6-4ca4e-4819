@@ -1,0 +1,48 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <style>
+    .mode-landscape .sl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; align-items: stretch; }
+    .mode-portrait .sl-grid { display: flex; flex-direction: column; gap: 1.5rem; }
+    .mode-landscape .sl-agents { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; align-content: start; }
+    .mode-portrait .sl-agents { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+    .sl-field { display: grid; grid-template-columns: 8.5rem 1fr; gap: 0.75rem; }
+    .mode-portrait .sl-field { grid-template-columns: 7rem 1fr; }
+  </style>
+  <div class="w-full h-full p-12 flex flex-col">
+    <div class="flex items-center justify-between mb-7">
+      <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-sm">M</div><span class="text-slate-900 font-semibold tracking-tight">Mino Autopilot</span></div>
+      <span class="text-xs font-semibold tracking-widest text-slate-400 uppercase">04 / 09 · The agent scaffold</span>
+    </div>
+
+    <h2 class="text-slate-900 font-bold tracking-tight" style="font-size: clamp(1.9rem, 3.6vw, 2.7rem); letter-spacing: -0.02em; text-wrap: balance;">Seven specialists. One contract they all answer to.</h2>
+    <p class="mt-2 text-slate-500 leading-relaxed max-w-2xl">Each agent owns a domain and coordinates behind the scenes — never acting on its own. Every one exposes the same six-field contract, so any recommendation can be inspected before it runs.</p>
+
+    <div class="sl-grid flex-1 mt-7">
+      <div class="sl-agents">
+        <div class="rounded-xl border border-slate-200 p-3.5"><p class="text-slate-900 font-semibold text-sm">Payroll</p><p class="text-slate-500 text-xs leading-snug mt-0.5">Anomalies &amp; the close packet</p></div>
+        <div class="rounded-xl border border-slate-200 p-3.5"><p class="text-slate-900 font-semibold text-sm">Compliance</p><p class="text-slate-500 text-xs leading-snug mt-0.5">Statutory deadlines &amp; risk</p></div>
+        <div class="rounded-xl border border-slate-200 p-3.5"><p class="text-slate-900 font-semibold text-sm">Onboarding</p><p class="text-slate-500 text-xs leading-snug mt-0.5">New-hire readiness by day one</p></div>
+        <div class="rounded-xl border border-slate-200 p-3.5"><p class="text-slate-900 font-semibold text-sm">Retention</p><p class="text-slate-500 text-xs leading-snug mt-0.5">Team-level attrition clusters</p></div>
+        <div class="rounded-xl border border-slate-200 p-3.5"><p class="text-slate-900 font-semibold text-sm">Performance</p><p class="text-slate-500 text-xs leading-snug mt-0.5">Review chasing &amp; calibration</p></div>
+        <div class="rounded-xl border border-slate-200 p-3.5"><p class="text-slate-900 font-semibold text-sm">Approval Routing</p><p class="text-slate-500 text-xs leading-snug mt-0.5">Right decision, right approver</p></div>
+        <div class="rounded-xl border border-slate-200 p-3.5"><p class="text-slate-900 font-semibold text-sm">Audit</p><p class="text-slate-500 text-xs leading-snug mt-0.5">Records every action &amp; reason</p></div>
+        <div class="rounded-xl border border-blue-200 bg-blue-50 p-3.5 flex items-center"><p class="text-blue-800 font-semibold text-xs leading-snug">Coordinated — never random. A human stays at every gate.</p></div>
+      </div>
+
+      <div class="rounded-2xl border border-slate-200 shadow-sm p-6 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <span class="inline-flex items-center gap-2 text-slate-900 font-semibold"><span class="w-6 h-6 rounded-md bg-blue-600 text-white flex items-center justify-center text-xs font-bold">P</span>Payroll Agent</span>
+          <span class="px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 text-xs font-semibold">Awaiting approval</span>
+        </div>
+        <div class="space-y-3 text-sm flex-1">
+          <div class="sl-field"><span class="text-slate-400 font-semibold uppercase tracking-wide" style="font-size: 0.68rem;">Goal</span><span class="text-slate-700">Detect payroll anomalies and prepare the close packet.</span></div>
+          <div class="sl-field"><span class="text-slate-400 font-semibold uppercase tracking-wide" style="font-size: 0.68rem;">Inputs</span><span class="text-slate-700">Salary, overtime, expense, leave &amp; headcount across SG · ID · MY · PH · HK.</span></div>
+          <div class="sl-field"><span class="text-slate-400 font-semibold uppercase tracking-wide" style="font-size: 0.68rem;">Reasoning</span><span class="text-slate-700">Indonesia Ops overtime is 38% above its 6-month average; three corrections posted late last cycle.</span></div>
+          <div class="sl-field"><span class="text-slate-400 font-semibold uppercase tracking-wide" style="font-size: 0.68rem;">Suggested action</span><span class="text-slate-700">Issue back-pay correction of IDR 14.2M and flag for Finance review.</span></div>
+          <div class="sl-field"><span class="text-slate-400 font-semibold uppercase tracking-wide" style="font-size: 0.68rem;">Approval level</span><span class="text-slate-700">HR Operations Lead</span></div>
+          <div class="sl-field"><span class="text-slate-400 font-semibold uppercase tracking-wide" style="font-size: 0.68rem;">Status</span><span class="inline-flex items-center gap-1.5 text-amber-700 font-medium"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>Held at the human gate</span></div>
+        </div>
+        <p class="mt-4 pt-4 border-t border-slate-100 text-slate-400 text-xs">Goal · Inputs · Reasoning · Suggested action · Approval level · Status — the same six fields for all seven agents.</p>
+      </div>
+    </div>
+  </div>
+</section>
