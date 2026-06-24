@@ -15,7 +15,7 @@ It is **not a chatbot**. It is a coordinated team of specialized HR agents worki
 ## Positioning
 
 - **Category:** Agentic HR operations layer (system of action), distinct from HRIS / system of record.
-- **Against the status quad:** Most HR software stores and reports. Omni stores the data; Mino runs the operations on top of it.
+- **Against the status quo:** Most HR software stores and reports. Omni stores the data; Mino runs the operations on top of it.
 - **The wedge:** Omni already owns the HR data. The defensible move is the *action layer* — safe, approved execution — not another assistant.
 - **The trust moat:** Every sensitive action passes through a human approval gate and lands in a transparent audit log. Safety is the product, not a feature.
 
